@@ -1,0 +1,9 @@
+services:
+  - type: web
+    runtime: static
+    name: eyad-lumen-studio
+    repo: https://github.com/eybes001/eyad-3d-portfolio
+    branch: main
+    buildCommand: python3 scripts/build_static.py
+    staticPublishPath: dist
+    autoDeployTrigger: commit
